@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Weather App</title>
+	<!--Import Google Icon Font-->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+	<!-- Font Awesome CSS -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- Style CSS -->
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" /> </head>
+
+<body class="container grey darken-4">
+	<div class="content valign-wrapper">
+		<div class="card-box valign">
+			<div class="row">
+				<div class="col s12 m8 l8 offset-m2 offset-l4">
+					<div class="card z-depth-5">
+						<div class="card-image waves-effect  waves-light"> <img src="videos/loading.gif" class="activator img-responsive" id="weather_image" alt=""> </div>
+						<!-- /.card-image -->
+						<div class="card-content grey lighten-3"> <span class="card-title activator  grey-text text-darken-4">
+						<span id="set_city_name" class="activator"></span>, <span id="country"></span><i class="material-icons right">more_vert</i> </span>
+							<div><span id="degrees"></span><i class="material-icons right toggle">language</i></div><span id="weather_condition"></span> </div>
+						<!-- /.card-content -->
+						<div class="card-reveal grey lighten-3"> <span class="card-title grey-text text-darken-4">
+						Weather Information<i class="material-icons right">close</i>
+						</span>
+							<ul>
+								<li><span class="info-title">Wind Speed</span>: <span id="wind_speed">7</span> KM</li>
+								<li><span class="info-title">Maximum Temp</span>: <span id="max_temp"></span>&deg;</li>
+								<li><span class="info-title">Minimum Temp</span>: <span id="min_temp"></span>&deg;</li>
+								<li><span class="info-title">Description</span>: <span id="desc"></span></li>
+							</ul>
+						</div>
+						<!-- /.card-reveal -->
+					</div>
+					<!-- /.card -->
+				</div>
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.card-box -->
+		<footer><span class="orange-text" style="font-weight: 600">Powered by</span> <a class="orange-text lighten-5" href="https://www.linkedin.com/in/abdelaziz-abdelioua-96478a133?trk=hp-identity-name" target="_blank" style="border-bottom: 1px solid #ff9800; padding-bottom: 3px;">Aziz</a></footer>
+	</div>
+	<!-- /.container -->
+	<!-- Start Loading -->
+	<div class="wrapper valign-wrapper">
+		<div class="spinner valign">
+			<div class="double-bounce1"></div>
+			<div class="double-bounce2"></div>
+		</div>
+	</div>
+	<!-- End Loading -->
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="http://www.geoplugin.net/javascript.gp"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+
+</html>
